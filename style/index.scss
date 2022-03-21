@@ -1,0 +1,237 @@
+
+
+
+$color1: #315C2B;
+$color2: #181F1C;
+$color3: #ffffff;
+$color4: #AFBE8F;
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: $color1;
+    height: 100px;
+    h1{
+        color: $color3;
+    }
+}
+
+
+.mainIndex{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap row;
+    background-image: linear-gradient(to top, #181f1c, #19251f, #1b2b23, #1e3225, #213827, #233d28, #264229, #29472a, #2b4c2b, #2d512b, #2f572b, #315c2b);
+    h2{
+        color: $color3;
+        align-self:center;
+        padding-right: 250px;
+        list-style: none;
+        display: flex;
+        font-size: 45px;
+        margin-bottom: 50px;
+        .listaPalabras ul{
+            margin: 0px;
+            padding-left: 15px !important;
+        }
+        
+    }
+    .contForm{
+        margin-bottom: 50px;
+        border-radius: 42px;
+        background-image: url(../media/img/blob-scene-haikei.svg);
+        background-position: center;
+        background-size: cover;
+        box-shadow: -11px 50px 138px -1px rgba(0,0,0,0.83);
+        -webkit-box-shadow: -11px 50px 138px -1px rgba(0,0,0,0.83);
+        -moz-box-shadow: -11px 50px 138px -1px rgba(0,0,0,0.83);
+    }
+
+}
+
+.formFlight{
+    height: auto;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content:center;
+    align-items: center;
+    color: $color3;
+    .sTrip{
+        padding: 15px;
+        .iyv{
+            padding-right: 5px;
+        }
+        .sIda{
+            padding-right: 5px;
+        }
+    }
+    .sOrigin{
+        padding: 15px;
+    }
+    .sDates{
+        padding: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .sPeople{
+        padding: 15px;
+        align-self: flex-start;
+        
+        .adul{
+            padding: 8px;
+            .atos{
+                margin-right: 5px;
+                font-size: 1.2rem;
+            }
+        }
+        .meno{
+            padding: 8px;
+            .ninos{
+                margin-right: 21px;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .bButton{
+        padding: 15px;
+    }
+}
+
+.less{
+    margin-right: 8px;
+    border-radius: 50%;
+    background-color: $color4;
+    font-weight: bold;
+    width: 30px;
+
+    
+
+}
+
+.plus{
+    margin-left: 8px;
+    border-radius: 50%;
+    background-color: $color4;
+    font-weight: bold;
+    width: 30px;
+    
+    
+    
+}
+
+
+footer{
+    background-color: $color2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    height: 50px;
+    .cajaCopy{
+        color: $color3;
+        padding: 0px;
+        font-size: 0.8rem;
+    }
+}
+
+
+.item{
+    position: absolute;
+    animation: roll 8s ease 1s infinite backwards;
+}
+
+.item:nth-child(1){
+    animation-delay: 0s;
+    opacity: 0;
+}
+
+.item:nth-child(2){
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+.item:nth-child(3){
+    animation-delay: 4s;
+    opacity: 0;
+}
+
+.item:nth-child(4){
+    animation-delay: 6s;
+    opacity: 0;
+}
+
+//animacion h2//
+
+@keyframes roll{
+    0%{
+        opacity: 0;
+        transform: translate3d(0,-70%,0);
+    }
+
+    2.5%, 25%{
+        opacity: 1;
+        transform: translateZ(0);
+    }
+
+    27.5%, 100%{
+        opacity: 0;
+        transform: translate3d(0,70%,0);
+    }
+
+}
+
+
+
+
+
+
+
+
+// boton buscar //
+
+.sButton {
+    padding: 4px 10px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: $color4;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.75);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.75);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.sButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+}
+
+.sButton:hover {
+    color: #e8e8e8;
+}
+
+.sButton:hover::before {
+    width: 100%;
+}
+
