@@ -1,14 +1,14 @@
 
 
 let numContainer = document.getElementById('num');
-let value = 1;
-let btnsInc = document.querySelector('.inc');
-let btnsDec = document.querySelector('.dec');
+let value = 0;
+let btnsInc = document.querySelector('#inc');
+let btnsDec = document.querySelector('#dec');
 
-btnsInc.addEventListener("click", (event) =>{value++;numContainer.textContent = value
-    event.preventDefault()
+btnsInc.addEventListener("click", e =>{value++;numContainer.textContent = value
+    e.preventDefault()
 });
 
-btnsDec.addEventListener("click", (event) =>{value--;numContainer.textContent = value
-    event.preventDefault()
+btnsDec.addEventListener("click", e =>{value--;numContainer.textContent = value
+    e.preventDefault()
 })

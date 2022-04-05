@@ -275,4 +275,128 @@ footer .cajaCopy {
 .sButton:hover::before {
   width: 100%;
 }
+
+@media only screen and (max-width: 500px) {
+  html, body {
+    height: auto;
+    min-height: 100vh;
+  }
+  .mainIndex h2 {
+    font-size: 30px;
+    margin: 0px 0px 20px;
+    padding: 0px 120px 0px 0px;
+  }
+  .mainIndex h2 .listaPalabras ul {
+    padding-left: 10px !important;
+  }
+  .contForm {
+    width: 350px;
+    margin-bottom: 100px !important;
+  }
+  .contForm .sOrigin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2px;
+  }
+  .contForm .sOrigin input {
+    width: 152px;
+    height: 50px;
+    padding-left: 40px;
+  }
+  .contForm .sOrigin .origin {
+    margin-right: 5px;
+  }
+  .contForm .sDates {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2px;
+    width: 91%;
+  }
+  .contForm .sDates input {
+    width: 152px;
+    height: 50px;
+    padding-left: 20px;
+  }
+  .contForm .sPeople {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+            flex-flow: wrap row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  html, body {
+    height: auto;
+    min-height: 100vh;
+  }
+  .mainIndex h2 {
+    font-size: 28px;
+    margin: 0px 0px 20px;
+    padding: 0px 120px 0px 0px;
+  }
+  .mainIndex h2 .listaPalabras ul {
+    padding-left: 10px !important;
+  }
+  .contForm {
+    width: 300px;
+  }
+  .contForm .sTrip {
+    padding-top: 25px;
+    font-size: 13px;
+  }
+  .contForm .sOrigin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2px;
+  }
+  .contForm .sOrigin input {
+    width: 130px;
+    height: 50px;
+    padding-left: 30px;
+  }
+  .contForm .sOrigin .origin {
+    margin-right: 5px;
+  }
+  .contForm .sDates {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2px;
+    width: 91%;
+  }
+  .contForm .sDates input {
+    width: 135px;
+    height: 50px;
+    padding-left: 12px;
+    margin: 2px;
+  }
+  .contForm .sPeople {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+            flex-flow: wrap row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 /*# sourceMappingURL=index.css.map */
