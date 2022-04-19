@@ -29,36 +29,36 @@
     </div> 
 
 
-        <div class="contForm">
-            <form class="formFlight" action="">
+        <div class="contForm" id="formTotal">
+            <form class="formFlight" id="flightForm" action="">
                 <div class="sTrip">
-                    <input type="radio" name="select-trip">
+                    <input type="radio" name="select-trip" id="roundTrip">
                     <label class="iyv" for="select-trip">Ida y Vuelta</label>
-                    <input type="radio" name="select-trip">
+                    <input type="radio" name="select-trip" id="oneWay">
                     <label class="sIda" for="select-trip">Solo Ida</label>
-                    <input type="radio" name="select-trip">
+                    <input type="radio" name="select-trip" id="multidestination">
                     <label class="multi" for="select-trip">Multidestino</label>
                 </div>
-                <div class="sOrigin">
-                    <input class="origin" type="text" name="origen" placeholder="Origen">
-                    <input type="text" name="destino" placeholder="Destino">
+                <div class="sOrigin" id="allTrips">
+                    <input class="origin" id="originTrip" type="text" name="origen" placeholder="Origen">
+                    <input type="text" id="destinationTrip" name="destino" placeholder="Destino">
                 </div>
                 <div class="sDates">    
-                    <input type="date" name="trip-start">
-                    <input type="date" name="trip-end">
+                    <input type="date" name="trip-start" id="startTrip">
+                    <input type="date" name="trip-end" id="endTrip">
                 </div>
                 <div class="sPeople">
                     <div class="adul">
                         <span class="atos">Adultos</span>
-                        <button class="btns less" id="dec">-</button><span id="num">1</span><button class="btns plus" id="inc">+</button>
+                        <button class="btns less" id="dec">-</button><span id="numAdultos">1</span><button class="btns plus" id="inc">+</button>
                     </div>
                     <div class="meno">
                         <span class="ninos">Niños</span>
-                        <button class="less">-</button><span>0</span><button class="plus">+</button>
+                        <button class="less">-</button><span id="numMenores">0</span><button class="plus">+</button>
                     </div>
                 </div>
                 <div class="bButton">
-                    <button class="sButton">Buscar</button>
+                    <button class="sButton" id="btnBuscar">Buscar</button>
                 </div>
 
 

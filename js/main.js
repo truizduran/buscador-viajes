@@ -1,32 +1,4 @@
 
-/*
-let idaYvuelta = confirm('ida y vuelta?');
-let soloIda = confirm ('solo ida?');
-let multiDestino = confirm ('es mas de un destino?');
-let origen = prompt ('desde donde quieres viajar?').toLocaleLowerCase();
-let destino = prompt ('hacia donde quieres viajar?').toLocaleLowerCase();
-let destinoTercero = prompt ('hacia donde quieres viajar despues?').toLocaleLowerCase();
-let fechaInicio = parseInt (prompt('que dia quieres viajar?'));
-let fechaFin = parseInt (prompt('que dia quieres volver?'));
-let adultos = parseInt (prompt('cuantos adultos viajan?'));
-let menores = parseInt (prompt ('cuantos menores de 16 años viajan?'));
-let buscar = confirm ('quieres buscar el vuelo?'); 
-*/
-
-
-/*
-let origenUsuario = prompt ('desde donde quieres viajar?').toLocaleLowerCase();
-let destinoUsuario = prompt ('hacia donde quieres viajar?').toLocaleLowerCase();
-let fechaInicioUsuario = parseInt (prompt('que dia quieres viajar?'));
-let FechaFinUsuario = parseInt (prompt('que dia quieres volver?'));
-let adultosUsuario = parseInt (prompt('cuantos adultos viajan?'));
-let menoresUsuario = parseInt (prompt ('cuantos menores de 16 años viajan?'));
-*/
-
-/* 
-let viajeIdaYvuelta  = `tu viaje desde ${origen} a ${destino} con salida el dia ${fechaInicio}, hasta el dia ${fechaFin} con ${adultos} adultos y ${menores} menores, esta listo para buscar.`;
-return viajeIdaYvuelta;
-*/
 
 
 
@@ -49,12 +21,12 @@ let viajeIdaYvuelta = []
 
 const agregarViajeIdaVuelta = () => {
 
-    let origen = prompt ('desde donde quieres viajar?').toLocaleLowerCase();
-    let destino = prompt ('hacia donde quieres viajar?').toLocaleLowerCase();
-    let fechaInicio = parseInt (prompt('que dia quieres viajar?'));
-    let fechaFin = parseInt (prompt('que dia quieres volver?'));
-    let adultos = parseInt (prompt('cuantos adultos viajan?'));
-    let menores = parseInt (prompt ('cuantos menores de 16 años viajan?'));
+    let origen = document.getElementById("originTrip").value;
+    let destino = document.getElementById("destinationTrip").value;
+    let fechaInicio = document.getElementById("startTrip").value;
+    let fechaFin = document.getElementById("endTrip").value;
+    let adultos = parseInt(document.getElementById("numAdultos")).value;
+    let menores = parseInt(document.getElementById("numMenores")).value;
 
     let viaje = new ViajeTotalIdaVuelta (origen, destino, fechaInicio, fechaFin, adultos, menores);
     viajeIdaYvuelta.push(viaje);
@@ -79,11 +51,11 @@ let viajeIda = []
 
 const agregarViajeIda = () => {
 
-    let origen = prompt ('desde donde quieres viajar?').toLocaleLowerCase();
-    let destino = prompt ('hacia donde quieres viajar?').toLocaleLowerCase();
-    let fechaInicio = parseInt (prompt('que dia quieres viajar?'));
-    let adultos = parseInt (prompt('cuantos adultos viajan?'));
-    let menores = parseInt (prompt ('cuantos menores de 16 años viajan?'));
+    let origen = document.getElementById("originTrip").value;
+    let destino = document.getElementById("destinationTrip").value;
+    let fechaInicio = document.getElementById("startTrip").value;
+    let adultos = parseInt(document.getElementById("numAdultos")).value;
+    let menores = parseInt(document.getElementById("numMenores")).value;
 
     let viajeSoloIda = new ViajeTotalSoloIda (origen, destino, fechaInicio, adultos, menores);
     viajeIda.push(viajeSoloIda);
@@ -110,13 +82,13 @@ let viajeMultidestino = []
 
 const agregarViajeMultidestino = () => {
 
-    let origen = prompt ('desde donde quieres viajar?').toLocaleLowerCase();
-    let destino = prompt ('hacia donde quieres viajar?').toLocaleLowerCase();
+    let origen = document.getElementById("originTrip").value;
+    let destino = document.getElementById("destinationTrip").value;
     let destinoTercero = prompt ('hacia donde quieres viajar despues?').toLocaleLowerCase();
-    let fechaInicio = parseInt (prompt('que dia quieres viajar?'));
-    let fechaFin = parseInt (prompt('que dia quieres volver?'));
-    let adultos = parseInt (prompt('cuantos adultos viajan?'));
-    let menores = parseInt (prompt ('cuantos menores de 16 años viajan?'));
+    let fechaInicio = document.getElementById("startTrip").value;
+    let fechaFin = document.getElementById("endTrip").value;
+    let adultos = parseInt(document.getElementById("numAdultos")).value;
+    let menores = parseInt(document.getElementById("numMenores")).value;
 
     let viajeSoloMultidestino = new ViajeTotalMultidestino (origen, destino, destinoTercero, fechaInicio, fechaFin, adultos, menores);
     viajeMultidestino.push(viajeSoloMultidestino);
@@ -155,9 +127,14 @@ function viajeUsuario(){
         
     }
 
-    
 
+
+
+
+    
 }
+
+
 
 
 
@@ -171,10 +148,6 @@ let buscarOrigen = viajeIdaYvuelta.filter(obj => {
 let buscarDestino = viajeIdaYvuelta.filter(obj => {
     return obj.destino == destino;
 })
-
-let buscarOrigenIda = viajeIda.filter(obj => {
-    return obj.origen == origen;
-}) 
 
 let buscarTercerDestino = viajeMultidestino.filter(obj => {
     return obj.terDestino = destinoTercero;
@@ -223,3 +196,10 @@ viajeMultidestino.sort((a,b) => {
     return 0;
 
 })
+
+
+
+var registro = new Date();
+console.log(registro);
+
+
