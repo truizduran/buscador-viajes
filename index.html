@@ -31,8 +31,8 @@
 
         <div class="contForm" id="formTotal">
             <form class="formFlight" id="flightForm" action="">
-                <div class="sTrip">
-                    <input type="radio" name="select-trip" id="roundTrip">
+                <div class="sTrip" id="selectTrip">
+                    <input type="radio" name="select-trip" id="roundTrip" value="1">
                     <label class="iyv" for="select-trip">Ida y Vuelta</label>
                     <input type="radio" name="select-trip" id="oneWay">
                     <label class="sIda" for="select-trip">Solo Ida</label>
@@ -50,11 +50,11 @@
                 <div class="sPeople">
                     <div class="adul">
                         <span class="atos">Adultos</span>
-                        <button class="btns less" id="dec">-</button><span id="numAdultos">1</span><button class="btns plus" id="inc">+</button>
+                        <button class="btns less" id="btnDec">-</button><span id="numAdultos">1</span><button class="btns plus" id="btnInc">+</button>
                     </div>
                     <div class="meno">
                         <span class="ninos">Niños</span>
-                        <button class="less">-</button><span id="numMenores">0</span><button class="plus">+</button>
+                        <button class="less" id="btnDecm">-</button><span id="numMenores">0</span><button class="plus" id="btnIncm">+</button>
                     </div>
                 </div>
                 <div class="bButton">

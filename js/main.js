@@ -1,17 +1,158 @@
 
+const botonPlus = document.querySelector("#btnInc");
+const botonLess = document.querySelector("#btnDec");
+const botonBuscar = document.querySelector("#btnBuscar");
+const botonPlusm = document.querySelector("#btnIncm");
+const botonLessm = document.querySelector("#btnDecm");
+
+
+
+//contador personas adultas
+
+//agregar personas
+let contadorAdultos = 1;
+
+function agregarAdultos (e) {
+    
+    if(contadorAdultos <= 5){
+        e.preventDefault();
+        updateAdultos(++contadorAdultos);
+    } else{
+        e.preventDefault();
+        alert('pasajeros maximos');
+    }
+
+}
+
+
+
+function updateAdultos(contadorAdultos) {
+    document.querySelector("#numAdultos").innerHTML = contadorAdultos;
+}
+
+
+botonPlus.addEventListener("click", agregarAdultos);
+
+
+
+//eliminar personas
+
+function eliminarAdultos (e) {
+
+    if(contadorAdultos >= 1){
+        e.preventDefault();
+        removeAdultos(--contadorAdultos);
+    } else{
+        e.preventDefault();
+    }
+}
+
+
+function removeAdultos(contadorAdultos) {
+    document.querySelector("#numAdultos").innerHTML = contadorAdultos;
+}
+
+botonLess.addEventListener("click", eliminarAdultos);
+
+
+
+//contador menores
+
+//agregar menores
+
+
+let contadorMenores = 0;
+
+function agregarMenores (e) {
+    
+    if(contadorMenores <= 5){
+        e.preventDefault();
+        updateMenores(++contadorMenores);
+    } else{
+        e.preventDefault();
+        alert('pasajeros maximos');
+    }
+
+}
+
+
+
+function updateMenores(contadorMenores) {
+    document.querySelector("#numMenores").innerHTML = contadorMenores;
+}
+
+
+botonPlusm.addEventListener("click", agregarMenores);
+
+
+
+//eliminar menores
+
+
+function eliminarMenores (e) {
+
+    if(contadorMenores >= 1){
+        e.preventDefault();
+        removeMenores(--contadorMenores);
+    } else{
+        e.preventDefault();
+    }
+}
+
+
+function removeMenores(contadorMenores) {
+    document.querySelector("#numMenores").innerHTML = contadorMenores;
+}
+
+botonLessm.addEventListener("click", eliminarMenores);
+
+// fin de eventos botones para contar personas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const seleccionViaje = document.querySelector("#selectTrip");
+
+seleccionViaje.addEventListener("input",()=>{
+    console.log(seleccionViaje.value);
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 class ViajeTotalIdaVuelta {
 
-    constructor(origen, destino, inicio, fin, adulto, menor){
+    constructor(origen, destino, inicio, fin, contadorAdultos, contadorMenores){
         this.origen = origen;
         this.destino = destino;
         this.fechaInicio = inicio;
         this.fechaFin = fin;
-        this.adultos = adulto;
-        this.menores = menor;
+        this.contadorAdultos = contadorAdultos;
+        this.contadorMenores = contadorMenores;
     }
 
 }
@@ -25,23 +166,25 @@ const agregarViajeIdaVuelta = () => {
     let destino = document.getElementById("destinationTrip").value;
     let fechaInicio = document.getElementById("startTrip").value;
     let fechaFin = document.getElementById("endTrip").value;
-    let adultos = parseInt(document.getElementById("numAdultos")).value;
-    let menores = parseInt(document.getElementById("numMenores")).value;
+    contadorAdultos; 
+    contadorMenores;
 
-    let viaje = new ViajeTotalIdaVuelta (origen, destino, fechaInicio, fechaFin, adultos, menores);
+    let viaje = new ViajeTotalIdaVuelta (origen, destino, fechaInicio, fechaFin, contadorAdultos, contadorMenores);
     viajeIdaYvuelta.push(viaje);
+
 
 }
 
 
+
 class ViajeTotalSoloIda {
 
-    constructor(origen, destino, inicio, adulto, menor){
+    constructor(origen, destino, inicio, contadorAdultos, contadorMenores){
         this.origen = origen;
         this.destino = destino;
         this.fechaInicio = inicio;
-        this.adultos = adulto;
-        this.menores = menor;
+        this.contadorAdultos = contadorAdultos;
+        this.contadorMenores = contadorMenores;
     }
 
 }
@@ -54,10 +197,10 @@ const agregarViajeIda = () => {
     let origen = document.getElementById("originTrip").value;
     let destino = document.getElementById("destinationTrip").value;
     let fechaInicio = document.getElementById("startTrip").value;
-    let adultos = parseInt(document.getElementById("numAdultos")).value;
-    let menores = parseInt(document.getElementById("numMenores")).value;
+    contadorAdultos; 
+    contadorMenores;
 
-    let viajeSoloIda = new ViajeTotalSoloIda (origen, destino, fechaInicio, adultos, menores);
+    let viajeSoloIda = new ViajeTotalSoloIda (origen, destino, fechaInicio, contadorAdultos, contadorMenores);
     viajeIda.push(viajeSoloIda);
 
 }
@@ -65,14 +208,14 @@ const agregarViajeIda = () => {
 
 class ViajeTotalMultidestino {
 
-    constructor(origen, destino, tercerDestino, inicio, fin, adulto, menor){
+    constructor(origen, destino, tercerDestino, inicio, fin, contadorAdultos, contadorMenores){
         this.origen = origen;
         this.destino = destino;
         this.destinoTercero = tercerDestino;
         this.fechaInicio = inicio;
         this.fechaFin = fin;
-        this.adultos = adulto;
-        this.menores = menor;
+        this.contadorAdultos = contadorAdultos;
+        this.contadorMenores = contadorMenores;
     }
 
 }
@@ -87,10 +230,10 @@ const agregarViajeMultidestino = () => {
     let destinoTercero = prompt ('hacia donde quieres viajar despues?').toLocaleLowerCase();
     let fechaInicio = document.getElementById("startTrip").value;
     let fechaFin = document.getElementById("endTrip").value;
-    let adultos = parseInt(document.getElementById("numAdultos")).value;
-    let menores = parseInt(document.getElementById("numMenores")).value;
+    contadorAdultos; 
+    contadorMenores;
 
-    let viajeSoloMultidestino = new ViajeTotalMultidestino (origen, destino, destinoTercero, fechaInicio, fechaFin, adultos, menores);
+    let viajeSoloMultidestino = new ViajeTotalMultidestino (origen, destino, destinoTercero, fechaInicio, fechaFin, contadorAdultos, contadorMenores);
     viajeMultidestino.push(viajeSoloMultidestino);
 
 }
