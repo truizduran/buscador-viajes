@@ -109,40 +109,7 @@ botonLessm.addEventListener("click", eliminarMenores);
 // fin de eventos botones para contar personas
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-const seleccionViaje = document.querySelector("#selectTrip");
-
-seleccionViaje.addEventListener("input",()=>{
-    console.log(seleccionViaje.value);
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//creacion de objetos de viajes y arrays respectivos
 
 class ViajeTotalIdaVuelta {
 
@@ -239,43 +206,82 @@ const agregarViajeMultidestino = () => {
 }
 
 
+//cambios visuales 
+
+let inputViajes = document.querySelector("#allTrips");
+
+let viajeUno = document.querySelector("#tt1");
+let viajeDos = document.querySelector("#tt2");
+let viajeTres = document.querySelector("#tt3");
+let fechaFin = document.getElementById("endTrip");
+
+let nodoTercerDestino = document.createElement("input");
+let nodoCuartoDestino = document.createElement("input");
 
 
+nodoTercerDestino.setAttribute("type", "text");
+nodoTercerDestino.setAttribute("name", "origen");
+nodoTercerDestino.setAttribute("placeholder", "Origen");
 
+nodoCuartoDestino.setAttribute("type", "text");
+nodoCuartoDestino.setAttribute("name", "destino");
+nodoCuartoDestino.setAttribute("placeholder", "Destino");
 
-function viajeUsuario(){
+function cambiosVisuales () {
 
-    let tipoViaje = prompt('que tipo de viaje es: ida y vuelta, solo ida o multidestino', 'ida y vuelta');
-
-    if (tipoViaje == 'ida y vuelta'){
-
-        agregarViajeIdaVuelta();
-        return agregarViajeIdaVuelta;
-        
-
-
-    } else if (tipoViaje == 'solo ida'){
-
-        agregarViajeIda();
-        return agregarViajeIda;
-
-    } else if (tipoViaje == 'multidestino') {
-
-        agregarViajeMultidestino();
-        return agregarViajeMultidestino;
-
+    if (viajeUno.checked) {
+        fechaFin.style.visibility = "visible";
+        nodoTercerDestino.style.display = "none";
+        nodoCuartoDestino.style.display = "none";
+        inputViajes.style.display = "block";
+    } else if (viajeDos.checked) {
+        fechaFin.style.visibility = "hidden";
+        nodoTercerDestino.style.display = "none";
+        nodoCuartoDestino.style.display = "none";
+        inputViajes.style.display = "block";
     } else {
+        fechaFin.style.visibility = "visible";
+        nodoTercerDestino.style.display = "block"; 
+        nodoCuartoDestino.style.display = "block";
+        inputViajes.style.display = "grid";
+        inputViajes.style.setProperty("grid-template-columns", "repeat(2, 1fr)");
+        inputViajes.style.setProperty("grid-gap", "3px");
+        document.getElementById("allTrips").append(nodoTercerDestino);
+        document.getElementById("allTrips").append(nodoCuartoDestino);
+    } 
 
-        alert('gracias por venir');
-        
-    }
-
-
-
-
-
-    
 }
+
+
+
+viajeUno.addEventListener('click', cambiosVisuales);
+viajeDos.addEventListener('click', cambiosVisuales);
+viajeTres.addEventListener('click', cambiosVisuales);
+
+
+
+
+//selector de viaje
+
+const selectViaje = document.querySelector('#selectTrip');
+
+selectViaje.addEventListener('change', (e) => {
+
+    if (viajeUno.checked) {
+        alert (`elegiste el viaje ${e.target.value}`);
+    } else if (viajeDos.checked) {
+        alert (`elegiste el viaje ${e.target.value}`);
+    } else {
+        alert (`elegiste el viaje ${e.target.value}`);
+        
+    } 
+
+})
+
+
+
+
+
 
 
 
