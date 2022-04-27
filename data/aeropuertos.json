@@ -1,0 +1,1827 @@
+{
+    "type": "FeatureCollection",
+    "totalFeatures": 55,
+    "features": [
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.2",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -68.30810498611865,
+                        -54.843586400884604
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "T. del Fuego",
+                "pais": "Argentina",
+                "ciudad": "Ushuaia",
+                "nombre2": "Aeropuerto de Ushuaia Malvinas Argentinas",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "London Supply S.A.C.I.F.I.",
+                "grupo": null,
+                "oaci": "SAWH",
+                "iata": "USH",
+                "concesiona": "Concesionado",
+                "anac": "USU",
+                "region": "RASU",
+                "fir": "SAVF",
+                "trafico": "INTL",
+                "nombre3": "Ushuaia",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.1",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -72.05304518405136,
+                        -50.28034888947778
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Santa Cruz",
+                "pais": "Argentina",
+                "ciudad": "El Calafate",
+                "nombre2": "Aeropuerto de El Calafate Comandante Armando Tola",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "London Supply S.A.C.I.F.I.",
+                "grupo": null,
+                "oaci": "SAWC",
+                "iata": "FTE",
+                "concesiona": "Concesionado",
+                "anac": "ECA",
+                "region": "RASU",
+                "fir": "SAVF",
+                "trafico": "NAC",
+                "nombre3": "El Calafate",
+                "documento": "https://www.eana.com.ar/media/estadisticas/tableros/2018/SAWC.pdf"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.5",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -71.13665178216398,
+                        -42.90470831072245
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Chubut",
+                "pais": "Argentina",
+                "ciudad": "Esquel",
+                "nombre2": "Aeropuerto de Esquel Brigadier General Antonio Parodi",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SAVE",
+                "iata": "EQS",
+                "concesiona": "Concesionado",
+                "anac": "ESQ",
+                "region": "RASU",
+                "fir": "SAVF",
+                "trafico": "NAC",
+                "nombre3": "Esquel",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.9",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -68.40318170941534,
+                        -34.58834138029983
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Mendoza",
+                "pais": "Argentina",
+                "ciudad": "San Rafael",
+                "nombre2": "Aeropuerto de San Rafael Santiago Germano",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SAMR",
+                "iata": "AFA",
+                "concesiona": "Concesionado",
+                "anac": "SRA",
+                "region": "RANO",
+                "fir": "SAMF",
+                "trafico": "NAC",
+                "nombre3": "San Rafael",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.10",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -68.79386104979281,
+                        -32.83040284073422
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Mendoza",
+                "pais": "Argentina",
+                "ciudad": "Mendoza",
+                "nombre2": "Aeropuerto de Mendoza Francisco Gabrielli - El Plumerillo",
+                "observacio": "con vuelos regulares dom�sticos e internacionales",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SAME",
+                "iata": "MDZ",
+                "concesiona": "Concesionado",
+                "anac": "DOZ",
+                "region": "RANO",
+                "fir": "SAMF",
+                "trafico": "INTL",
+                "nombre3": "Mendoza",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.11",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -68.41877525414593,
+                        -31.569910234098103
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "San Juan",
+                "pais": "Argentina",
+                "ciudad": "San Juan",
+                "nombre2": "Aeropuerto de San Juan Domingo Faustino Sarmiento",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SANU",
+                "iata": "UAQ",
+                "concesiona": "Concesionado",
+                "anac": "JUA",
+                "region": "RANO",
+                "fir": "SAMF",
+                "trafico": "NAC",
+                "nombre3": "San Juan",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.12",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -65.2687107165414,
+                        -43.211906377242144
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Chubut",
+                "pais": "Argentina",
+                "ciudad": "Trelew",
+                "nombre2": "Aeropuerto de Trelew Almirante Zar",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "London Supply S.A.C.I.F.I.",
+                "grupo": null,
+                "oaci": "SAVT",
+                "iata": "REL",
+                "concesiona": "Concesionado",
+                "anac": "TRE",
+                "region": "RASU",
+                "fir": "SAVF",
+                "trafico": "INTL",
+                "nombre3": "Trelew",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.13",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -65.10349769084932,
+                        -42.75881165830642
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Chubut",
+                "pais": "Argentina",
+                "ciudad": "Puerto Madryn",
+                "nombre2": "Aeropuerto de Puerto Madryn El Tehuelche",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SAVY",
+                "iata": "PMY",
+                "concesiona": "Concesionado",
+                "anac": "DRY",
+                "region": "RASU",
+                "fir": "SAVF",
+                "trafico": "NAC",
+                "nombre3": "Puerto Madryn",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.15",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -64.27484507394487,
+                        -36.585780043063004
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "La Pampa",
+                "pais": "Argentina",
+                "ciudad": "Santa Rosa",
+                "nombre2": "Aeropuerto de Santa Rosa",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SAZR",
+                "iata": "RSA",
+                "concesiona": "Concesionado",
+                "anac": "OSA",
+                "region": "RACE",
+                "fir": "SAEF",
+                "trafico": "NAC",
+                "nombre3": "Santa Rosa",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.55",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -58.61246462106231,
+                        -34.61000043266939
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Buenos Aires",
+                "pais": "Argentina",
+                "ciudad": "El palomar",
+                "nombre2": "Aeropuerto El Palomar",
+                "observacio": null,
+                "sna": "SNA",
+                "explotador": null,
+                "grupo": null,
+                "oaci": null,
+                "iata": "PAL",
+                "concesiona": null,
+                "anac": null,
+                "region": null,
+                "fir": null,
+                "trafico": null,
+                "nombre3": "El Palomar",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.17",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -58.81389387676821,
+                        -38.489014031346635
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Buenos Aires",
+                "pais": "Argentina",
+                "ciudad": "Necochea",
+                "nombre2": "Aeropuerto de Necochea Edgardo Hugo Yelpo",
+                "observacio": "sin vuelos regulares",
+                "sna": "SNA",
+                "explotador": "Provincia de de Buenos Aires",
+                "grupo": null,
+                "oaci": "SAZO",
+                "iata": "NEC",
+                "concesiona": "No Concesionado",
+                "anac": "NEC",
+                "region": "RACE",
+                "fir": "SAEF",
+                "trafico": "NAC",
+                "nombre3": "Necochea",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.18",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -57.574044997935644,
+                        -37.93211301775344
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Buenos Aires",
+                "pais": "Argentina",
+                "ciudad": "Mar del Plata",
+                "nombre2": "Aeropuerto de Mar del Plata Astor Piazzola",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SAZM",
+                "iata": "MDQ",
+                "concesiona": "Concesionado",
+                "anac": "MDP",
+                "region": "RACE",
+                "fir": "SAEF",
+                "trafico": "INTL",
+                "nombre3": "Mar del Plata",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.19",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -58.41342800000001,
+                        -34.560554
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Cap. Federal",
+                "pais": "Argentina",
+                "ciudad": "Aeroparque",
+                "nombre2": "Aeroparque Jorge Newberry",
+                "observacio": "con vuelos regulares dom�sticos e internacionales",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SABE",
+                "iata": "AEP",
+                "concesiona": "Concesionado",
+                "anac": "AER",
+                "region": "RACE",
+                "fir": "SAEF",
+                "trafico": "INTL",
+                "nombre3": "Aeroparque",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.20",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -66.35628834151618,
+                        -33.273087592613535
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "San Luis",
+                "pais": "Argentina",
+                "ciudad": "San Luis",
+                "nombre2": "Aeropuerto de San Luis Brigadier Mayor C�sar Ojeda",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SAOU",
+                "iata": "LUQ",
+                "concesiona": "Concesionado",
+                "anac": "UIS",
+                "region": "RANO",
+                "fir": "SAMF",
+                "trafico": "NAC",
+                "nombre3": "San Luis",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.21",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -66.79234889357927,
+                        -29.37452466922506
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "La Rioja",
+                "pais": "Argentina",
+                "ciudad": "La Rioja",
+                "nombre2": "Aeropuerto de La Rioja Capit�n Vicente A. Almonacid",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SANL",
+                "iata": "IRJ",
+                "concesiona": "Concesionado",
+                "anac": "LAR",
+                "region": "RANO",
+                "fir": "SACF",
+                "trafico": "NAC",
+                "nombre3": "La Rioja",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.23",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -65.75271079001757,
+                        -28.594315545455707
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Catamarca",
+                "pais": "Argentina",
+                "ciudad": "Catamarca",
+                "nombre2": "Aeropuerto de Catamarca Coronel Felipe Varela",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SANC",
+                "iata": "CTC",
+                "concesiona": "Concesionado",
+                "anac": "CAT",
+                "region": "RANO",
+                "fir": "SACF",
+                "trafico": "NAC",
+                "nombre3": "Catamarca",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.24",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -65.10225446667454,
+                        -26.835503408966808
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Tucuman",
+                "pais": "Argentina",
+                "ciudad": "Tucuman",
+                "nombre2": "Aeropuerto de Tucum�n Benjam�n Matienzo",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SANT",
+                "iata": "TUC",
+                "concesiona": "Concesionado",
+                "anac": "TUC",
+                "region": "RANO",
+                "fir": "SACF",
+                "trafico": "INTL",
+                "nombre3": "San Miguel de Tucum�n",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.25",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -64.31002111583831,
+                        -27.766069669309626
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Sgo. del Ester",
+                "pais": "Argentina",
+                "ciudad": "Santiago del Estero",
+                "nombre2": "Aeropuerto de Santiago del Estero Vcom. Angel de la Paz Aragones",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SANE",
+                "iata": "SDE",
+                "concesiona": "Concesionado",
+                "anac": "SDE",
+                "region": "RANO",
+                "fir": "SACF",
+                "trafico": "NAC",
+                "nombre3": "Santiago del Estero",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.26",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -60.78523155470429,
+                        -32.90972096626273
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Santa Fe",
+                "pais": "Argentina",
+                "ciudad": "Rosario",
+                "nombre2": "Aeropuerto de Rosario Islas Malvinas",
+                "observacio": "con vuelos regulares dom�sticos e internacionales",
+                "sna": "SNA",
+                "explotador": "Ente Tripartito AIR",
+                "grupo": null,
+                "oaci": "SAAR",
+                "iata": "ROS",
+                "concesiona": "No Concesionado",
+                "anac": "ROS",
+                "region": "RACE",
+                "fir": "SAEF",
+                "trafico": "INTL",
+                "nombre3": "Rosario",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.27",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -60.81180148851709,
+                        -31.711417068196507
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Santa Fe",
+                "pais": "Argentina",
+                "ciudad": "Santa Fe",
+                "nombre2": "Aeropuerto de Santa Fe",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "Provincia de Santa F�",
+                "grupo": null,
+                "oaci": "SAAV",
+                "iata": "SFN",
+                "concesiona": "No Concesionado",
+                "anac": "SVO",
+                "region": "RACE",
+                "fir": "SAEF",
+                "trafico": "NAC",
+                "nombre3": "Santa Fe",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.29",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -59.05723673580053,
+                        -27.452767278059294
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Chaco",
+                "pais": "Argentina",
+                "ciudad": "Resistencia",
+                "nombre2": "Aeropuerto de Resistencia Jose de San Mart�n",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SARE",
+                "iata": "RES",
+                "concesiona": "Concesionado",
+                "anac": "SIS",
+                "region": "RANE",
+                "fir": "SARR",
+                "trafico": "INTL",
+                "nombre3": "Resistencia",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.30",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -58.76200006073081,
+                        -27.448176340619145
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Corrientes",
+                "pais": "Argentina",
+                "ciudad": "Corrientes",
+                "nombre2": "Aeropuerto de Corrientes Dr. Fernando Piragine Niveyro",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "Dir. Aeronautica Prov. de Corrientes",
+                "grupo": null,
+                "oaci": "SARC",
+                "iata": "CNQ",
+                "concesiona": "No Concesionado",
+                "anac": "CRR",
+                "region": "RANE",
+                "fir": "SARR",
+                "trafico": "INTL",
+                "nombre3": "Corrientes",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.31",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -65.48438724469551,
+                        -24.85377983902201
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Salta",
+                "pais": "Argentina",
+                "ciudad": "Salta",
+                "nombre2": "Aeropuerto de Salta Mart�n Miguel de G�emes",
+                "observacio": "con vuelos regulares dom�sticos e internacionales",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SASA",
+                "iata": "SLA",
+                "concesiona": "Concesionado",
+                "anac": "SAL",
+                "region": "RANO",
+                "fir": "SACF",
+                "trafico": "INTL",
+                "nombre3": "Salta",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.32",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -65.09910942439882,
+                        -24.389859402404774
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Jujuy",
+                "pais": "Argentina",
+                "ciudad": "Jujuy",
+                "nombre2": "Aeropuerto de Jujuy El Cadillal - Gobernador Guzman",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SASJ",
+                "iata": "JUJ",
+                "concesiona": "Concesionado",
+                "anac": "JUJ",
+                "region": "RANO",
+                "fir": "SACF",
+                "trafico": "INTL",
+                "nombre3": "S. S. de Jujuy",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.33",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -58.226825459201805,
+                        -26.214156037312062
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Formosa",
+                "pais": "Argentina",
+                "ciudad": "Formosa",
+                "nombre2": "Aeropuerto de Formosa El Pucu",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SARF",
+                "iata": "FMA",
+                "concesiona": "Concesionado",
+                "anac": "FSA",
+                "region": "RANE",
+                "fir": "SARR",
+                "trafico": "INTL",
+                "nombre3": "Formosa",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.34",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -55.97122208538893,
+                        -27.389104
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Misiones",
+                "pais": "Argentina",
+                "ciudad": "Posadas",
+                "nombre2": "Aeropuerto de Posadas Libertador General San Martin",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SARP",
+                "iata": "PSS",
+                "concesiona": "Concesionado",
+                "anac": "POS",
+                "region": "RANE",
+                "fir": "SARR",
+                "trafico": "INTL",
+                "nombre3": "Posadas",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.36",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -58.542461865561364,
+                        -34.812287473439504
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Buenos Aires",
+                "pais": "Argentina",
+                "ciudad": "Ezeiza",
+                "nombre2": "Aeropuerto de Ezeiza Ministro Pistarini",
+                "observacio": "con vuelos regulares dom�sticos e internacionales",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SAEZ",
+                "iata": "EZE",
+                "concesiona": "Concesionado",
+                "anac": "EZE",
+                "region": "RACE",
+                "fir": "SAEF",
+                "trafico": "INTL",
+                "nombre3": "Ezeiza",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.37",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -67.46553279460962,
+                        -45.78494248652403
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Chubut",
+                "pais": "Argentina",
+                "ciudad": "Com. Rivadavia",
+                "nombre2": "Aeropuerto de Comodoro Rivadavia General Enrique Mosconi",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SAVC",
+                "iata": "CRD",
+                "concesiona": "Concesionado",
+                "anac": "CRV",
+                "region": "RASU",
+                "fir": "SAVF",
+                "trafico": "INTL",
+                "nombre3": "Comodoro Rivadavia",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.39",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -63.75972322219686,
+                        -35.69126094473591
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "La Pampa",
+                "pais": "Argentina",
+                "ciudad": "General Pico",
+                "nombre2": "Aeropuerto de General Pico",
+                "observacio": "sin vuelos regulares",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SAZG",
+                "iata": "GPO",
+                "concesiona": "Concesionado",
+                "anac": "GPI",
+                "region": "RACE",
+                "fir": "SAEF",
+                "trafico": "NAC",
+                "nombre3": "Gral. Pico",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.42",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -57.89538079028936,
+                        -34.97610933109367
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Buenos Aires",
+                "pais": "Argentina",
+                "ciudad": "La Plata",
+                "nombre2": "Aeropuerto de La Plata",
+                "observacio": "sin vuelos regulares",
+                "sna": "SNA",
+                "explotador": "Provincia de de Buenos Aires",
+                "grupo": null,
+                "oaci": "SADP",
+                "iata": "LPG",
+                "concesiona": "No Concesionado",
+                "anac": "PTA",
+                "region": "RACE",
+                "fir": "SAEF",
+                "trafico": "NAC",
+                "nombre3": "La Plata",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.44",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -57.152067419421286,
+                        -29.689268507748903
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Corrientes",
+                "pais": "Argentina",
+                "ciudad": "Paso de los Libres",
+                "nombre2": "Aeropuerto de Paso de los Libres",
+                "observacio": "sin vuelos regulares",
+                "sna": "SNA",
+                "explotador": "ANAC",
+                "grupo": null,
+                "oaci": "SARL",
+                "iata": "AOL",
+                "concesiona": "No Concesionado",
+                "anac": "LIB",
+                "region": "RANE",
+                "fir": "SARR",
+                "trafico": "INTL",
+                "nombre3": "Paso de los Libres",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.45",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -59.68138908166927,
+                        -29.210457071110532
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Santa Fe",
+                "pais": "Argentina",
+                "ciudad": "Reconquista",
+                "nombre2": "Aeropuerto de Reconquista",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SATR",
+                "iata": "RCQ",
+                "concesiona": "Concesionado",
+                "anac": "RTA",
+                "region": "RANE",
+                "fir": "SARR",
+                "trafico": "NAC",
+                "nombre3": "Reconquista",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.47",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -58.58913955297556,
+                        -34.45309358485369
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Buenos Aires",
+                "pais": "Argentina",
+                "ciudad": "San Fernando",
+                "nombre2": "Aeropuerto de San Fernando",
+                "observacio": "sin vuelos regulares",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SADF",
+                "iata": "FDO",
+                "concesiona": "Concesionado",
+                "anac": "FDO",
+                "region": "RACE",
+                "fir": "SAEF",
+                "trafico": "INTL",
+                "nombre3": "San Fernando",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.48",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -56.72030577814635,
+                        -36.5425734151463
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Buenos Aires",
+                "pais": "Argentina",
+                "ciudad": "Santa Teresita",
+                "nombre2": "Aeropuerto de Santa Teresita",
+                "observacio": "sin vuelos regulares",
+                "sna": "SNA",
+                "explotador": "Municipalidad de La Costa",
+                "grupo": null,
+                "oaci": "SAZL",
+                "iata": "SST",
+                "concesiona": "No Concesionado",
+                "anac": "STR",
+                "region": "RACE",
+                "fir": "SAEF",
+                "trafico": "NAC",
+                "nombre3": "Santa Teresita",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.49",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -59.22881289443511,
+                        -37.23622057975411
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Buenos Aires",
+                "pais": "Argentina",
+                "ciudad": "Tandil",
+                "nombre2": "Aeropuerto de Tandil",
+                "observacio": "sin vuelos regulares",
+                "sna": "SNA",
+                "explotador": "Provincia de Buenos Aires",
+                "grupo": null,
+                "oaci": "SAZT",
+                "iata": "TDL",
+                "concesiona": "No Concesionado",
+                "anac": "DIL",
+                "region": "RACE",
+                "fir": "SAEF",
+                "trafico": "NAC",
+                "nombre3": "Tandil",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.50",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -63.793726869974215,
+                        -22.618638295242434
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Salta",
+                "pais": "Argentina",
+                "ciudad": "Tartagal",
+                "nombre2": "Aeropuerto de Tartagal Gral Enrique Mosconi",
+                "observacio": "sin vuelos regulares",
+                "sna": "SNA",
+                "explotador": "Provincia de Salta",
+                "grupo": null,
+                "oaci": "SAST",
+                "iata": "TTG",
+                "concesiona": "No Concesionado",
+                "anac": "TAR",
+                "region": "RANO",
+                "fir": "SACF",
+                "trafico": "NAC",
+                "nombre3": "Tartagal",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.51",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -57.02912394808962,
+                        -37.23491520247535
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Buenos Aires",
+                "pais": "Argentina",
+                "ciudad": "Villa Gesell",
+                "nombre2": "Aeropuerto de Villa Gesell",
+                "observacio": "sin vuelos regulares",
+                "sna": "SNA",
+                "explotador": "Municipalidad de Villa Gesell",
+                "grupo": null,
+                "oaci": "SAZV",
+                "iata": "VLG",
+                "concesiona": "No Concesionado",
+                "anac": "GES",
+                "region": "RACE",
+                "fir": "SAEF",
+                "trafico": "NAC",
+                "nombre3": "Villa Gesell",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.52",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -65.38612810493274,
+                        -33.729806828699544
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "San Luis",
+                "pais": "Argentina",
+                "ciudad": "Villa Mercedes",
+                "nombre2": "Aeropuerto de Villa Reynolds",
+                "observacio": "sin vuelos regulares",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SAOR",
+                "iata": "VME",
+                "concesiona": "Concesionado",
+                "anac": "RYD",
+                "region": "RANO",
+                "fir": "SAMF",
+                "trafico": "NAC",
+                "nombre3": "Villa Mercedes",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.54",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -72.21666667294564,
+                        -51.60638888563866
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Santa Cruz",
+                "pais": "Argentina",
+                "ciudad": "El Turbio/28 de Noviembre",
+                "nombre2": "Aeropuerto de R�o Turbio/28 de Noviembre",
+                "observacio": "sin vuelos regulares",
+                "sna": "SNA",
+                "explotador": "Municipio de 28 de Noviembre",
+                "grupo": null,
+                "oaci": "SAWT",
+                "iata": "RYO",
+                "concesiona": "No Concesionado",
+                "anac": "BIO",
+                "region": "RASU",
+                "fir": "SAVF",
+                "trafico": "NAC",
+                "nombre3": "El Turbio/28 de Noviembre",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.43",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -69.58019922520845,
+                        -35.48641058935752
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Mendoza",
+                "pais": "Argentina",
+                "ciudad": "Malargue",
+                "nombre2": "Aeropuerto de Malarg�e Comodoro D. Ricardo Salomon",
+                "observacio": "sin vuelos regulares",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SAMM",
+                "iata": "LGS",
+                "concesiona": "Concesionado",
+                "anac": "MLG",
+                "region": "RANO",
+                "fir": "SAMF",
+                "trafico": "NAC",
+                "nombre3": "Malargüe",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.3",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -69.30791890262672,
+                        -51.60895079622087
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Santa cruz",
+                "pais": "Argentina",
+                "ciudad": "Rio Gallegos",
+                "nombre2": "Aeropuerto de R�o Gallegos Piloto Civil Norberto Fern�ndez",
+                "observacio": "con vuelos regulares dom�sticos e internacionales",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SAWG",
+                "iata": "RGL",
+                "concesiona": "Concesionado",
+                "anac": "GAL",
+                "region": "RASU",
+                "fir": "SAVF",
+                "trafico": "INTL",
+                "nombre3": "Río Gallegos",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.4",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -67.75308297707619,
+                        -53.777840238797936
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "T. del Fuego",
+                "pais": "Argentina",
+                "ciudad": "Río Grande",
+                "nombre2": "Aeropuerto de Rio Grande Gob. Ram�n Trejo Noel",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SAWE",
+                "iata": "RGA",
+                "concesiona": "Concesionado",
+                "anac": "GRA",
+                "region": "RASU",
+                "fir": "SAVF",
+                "trafico": "INTL",
+                "nombre3": "Río Grande",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.6",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -71.1593078789764,
+                        -41.15031943377299
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Río Negro",
+                "pais": "Argentina",
+                "ciudad": "San C. de Bariloche",
+                "nombre2": "Aeropuerto de San Carlos de Bariloche Teniente Luis Candelaria",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SAZS",
+                "iata": "BRC",
+                "concesiona": "Concesionado",
+                "anac": "BAR",
+                "region": "RACE",
+                "fir": "SAEF",
+                "trafico": "INTL",
+                "nombre3": "Bariloche",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.7",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -71.14068085201642,
+                        -40.07670104242249
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Neuquén",
+                "pais": "Argentina",
+                "ciudad": "San Martín de los Andes",
+                "nombre2": "Aeropuerto de Chapelco Aviador Carlos Campos",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "Dir. Pcial. de Aeron�utica de Neuqu�n",
+                "grupo": null,
+                "oaci": "SAZY",
+                "iata": "CPC",
+                "concesiona": "No Concesionado",
+                "anac": "CHP",
+                "region": "RACE",
+                "fir": "SAEF",
+                "trafico": "NAC",
+                "nombre3": "Chapelco",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.8",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -68.15443619906651,
+                        -38.94894621212032
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Neuquén",
+                "pais": "Argentina",
+                "ciudad": "Neuquén",
+                "nombre2": "Aeropuerto de Neuquen Presidente Per�n",
+                "observacio": "con vuelos regulares dom�sticos e internacionales",
+                "sna": "SNA",
+                "explotador": "Aeropuertos del Neuqu�n S.A",
+                "grupo": null,
+                "oaci": "SAZN",
+                "iata": "NQN",
+                "concesiona": "Concesionado",
+                "anac": "NEU",
+                "region": "RACE",
+                "fir": "SAEF",
+                "trafico": "INTL",
+                "nombre3": "Neuquén",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.14",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -62.99926721456352,
+                        -40.86989467228366
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Río Negro",
+                "pais": "Argentina",
+                "ciudad": "Viedma",
+                "nombre2": "Aeropuerto de Viedma Gobernador Edgardo Castello",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SAVV",
+                "iata": "VDM",
+                "concesiona": "Concesionado",
+                "anac": "VIE",
+                "region": "RASU",
+                "fir": "SAVF",
+                "trafico": "NAC",
+                "nombre3": "Viedma",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.16",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -62.15379847934545,
+                        -38.7236753422101
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Buenos Aires",
+                "pais": "Argentina",
+                "ciudad": "Bahía Blanca",
+                "nombre2": "Aeropuerto de Bah�a Blanca Comandante Espora",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "Aeropuerto Bah�a Blanca S.A.",
+                "grupo": null,
+                "oaci": "SAZB",
+                "iata": "BHI",
+                "concesiona": "Concesionado",
+                "anac": "BCA",
+                "region": "RACE",
+                "fir": "SAEF",
+                "trafico": "NAC",
+                "nombre3": "Bahía Blanca",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.22",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -64.20820323418707,
+                        -31.31558087760009
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Córdoba",
+                "pais": "Argentina",
+                "ciudad": "Córdoba",
+                "nombre2": "Aeropuerto de C�rdoba Ing. A. Taravella - Pajas Blancas",
+                "observacio": "con vuelos regulares dom�sticos e internacionales",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SACO",
+                "iata": "COR",
+                "concesiona": "Concesionado",
+                "anac": "CBA",
+                "region": "RANO",
+                "fir": "SACF",
+                "trafico": "INTL",
+                "nombre3": "Córdoba",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.28",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -60.48047009941686,
+                        -31.796118846375688
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Entre Ríos",
+                "pais": "Argentina",
+                "ciudad": "Paraná",
+                "nombre2": "Aeropuerto de Paran� Gral. Urquiza",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SAAP",
+                "iata": "PRA",
+                "concesiona": "Concesionado",
+                "anac": "PAR",
+                "region": "RACE",
+                "fir": "SAEF",
+                "trafico": "NAC",
+                "nombre3": "Paraná",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.35",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -54.47583144869375,
+                        -25.734474947478017
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Misiones",
+                "pais": "Argentina",
+                "ciudad": "Iguazú",
+                "nombre2": "Aeropuerto de Cataratas del Iguaz�",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SARI",
+                "iata": "IGR",
+                "concesiona": "Concesionado",
+                "anac": "IGU",
+                "region": "RANE",
+                "fir": "SARR",
+                "trafico": "INTL",
+                "nombre3": "Iguazú",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.38",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -57.997305,
+                        -31.29702012836899
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Entre Ríos",
+                "pais": "Argentina",
+                "ciudad": "Concordia",
+                "nombre2": "Aeropuerto de Concordia Comodoro Juan Jos� Pierrestegui",
+                "observacio": "sin vuelos regulares",
+                "sna": "SNA",
+                "explotador": "Municipalidad de Concordia",
+                "grupo": null,
+                "oaci": "SAAC",
+                "iata": "COC",
+                "concesiona": "No Concesionado",
+                "anac": "DIA",
+                "region": "RACE",
+                "fir": "SAEF",
+                "trafico": "NAC",
+                "nombre3": "Concordia",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.40",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -67.61889255507985,
+                        -38.999443252004646
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Río Negro",
+                "pais": "Argentina",
+                "ciudad": "General Roca",
+                "nombre2": "Aeropuerto de Gral. Roca Dr. Arturo H. Illia",
+                "observacio": "sin vuelos regulares",
+                "sna": "SNA",
+                "explotador": "Aero Club General Roca",
+                "grupo": null,
+                "oaci": "SAHR",
+                "iata": "GNR",
+                "concesiona": "No Concesionado",
+                "anac": "GNR",
+                "region": "RACE",
+                "fir": "SAEF",
+                "trafico": "NAC",
+                "nombre3": "Gral. Roca",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.41",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -60.93012358057873,
+                        -34.54567602427661
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Buenos Aires",
+                "pais": "Argentina",
+                "ciudad": "Junin",
+                "nombre2": "Aeropuerto de Junin",
+                "observacio": "sin vuelos regulares",
+                "sna": "SNA",
+                "explotador": "Municipalidad de Junin",
+                "grupo": null,
+                "oaci": "SAAJ",
+                "iata": "JNI",
+                "concesiona": "No Concesionado",
+                "anac": "NIN",
+                "region": "RACE",
+                "fir": "SAEF",
+                "trafico": "NAC",
+                "nombre3": "Junín",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.46",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -64.2692882582764,
+                        -33.09433597571817
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Cordoba",
+                "pais": "Argentina",
+                "ciudad": "Río Cuarto",
+                "nombre2": "Aeropuerto de Rio Cuarto - �rea de Material",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": "A",
+                "oaci": "SAOC",
+                "iata": "RCU",
+                "concesiona": "Concesionado",
+                "anac": "TRC",
+                "region": "RANO",
+                "fir": "SACF",
+                "trafico": "NAC",
+                "nombre3": "Río Cuarto",
+                "documento": null
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "_3.4.4.5_SNA_jun17.view.53",
+            "geometry": {
+                "type": "MultiPoint",
+                "coordinates": [
+                    [
+                        -64.93794009624844,
+                        -27.509027634214075
+                    ]
+                ]
+            },
+            "geometry_name": "geom",
+            "properties": {
+                "provincia": "Sgo. del Ester",
+                "pais": "Argentina",
+                "ciudad": "Río Hondo",
+                "nombre2": "Aeropuerto de Termas de R�o Hondo",
+                "observacio": "con vuelos regulares dom�sticos",
+                "sna": "SNA",
+                "explotador": "AA2000",
+                "grupo": null,
+                "oaci": "SANR",
+                "iata": "RHD",
+                "concesiona": "No Concesionado",
+                "anac": "RHD",
+                "region": "RANO",
+                "fir": "SACF",
+                "trafico": "NAC",
+                "nombre3": "Río Hondo",
+                "documento": null
+            }
+        }
+    ],
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:EPSG::4326"
+        }
+    }
+}

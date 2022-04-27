@@ -125,7 +125,7 @@ class ViajeTotalIdaVuelta {
 }
 
 
-let viajeIdaYvuelta = []
+let viajeIdaYvuelta = JSON.parse(localStorage.getItem("viajeIdaVuelta")) || [];
 
 const agregarViajeIdaVuelta = () => {
 
@@ -139,7 +139,7 @@ const agregarViajeIdaVuelta = () => {
     let viaje = new ViajeTotalIdaVuelta (origen, destino, fechaInicio, fechaFin, contadorAdultos, contadorMenores);
     viajeIdaYvuelta.push(viaje);
 
-
+    localStorage.setItem("viajeIdaVuelta",JSON.stringify(viajeIdaYvuelta));
 }
 
 
@@ -175,10 +175,11 @@ const agregarViajeIda = () => {
 
 class ViajeTotalMultidestino {
 
-    constructor(origen, destino, tercerDestino, inicio, fin, contadorAdultos, contadorMenores){
+    constructor(origen, destino, destinoTercero, cuartoDestino, inicio, fin, contadorAdultos, contadorMenores){
         this.origen = origen;
         this.destino = destino;
-        this.destinoTercero = tercerDestino;
+        this.destinoTercero = destinoTercero;
+        this.cuartoDestino = cuartoDestino;
         this.fechaInicio = inicio;
         this.fechaFin = fin;
         this.contadorAdultos = contadorAdultos;
@@ -194,13 +195,14 @@ const agregarViajeMultidestino = () => {
 
     let origen = document.getElementById("originTrip").value;
     let destino = document.getElementById("destinationTrip").value;
-    let destinoTercero = prompt ('hacia donde quieres viajar despues?').toLocaleLowerCase();
+    let destinoTercero = document.getElementById("destinationThird").value;
+    let cuartoDestino = document.getElementById("destinationFourth").value;
     let fechaInicio = document.getElementById("startTrip").value;
     let fechaFin = document.getElementById("endTrip").value;
     contadorAdultos; 
     contadorMenores;
 
-    let viajeSoloMultidestino = new ViajeTotalMultidestino (origen, destino, destinoTercero, fechaInicio, fechaFin, contadorAdultos, contadorMenores);
+    let viajeSoloMultidestino = new ViajeTotalMultidestino (origen, destino, destinoTercero, cuartoDestino, fechaInicio, fechaFin, contadorAdultos, contadorMenores);
     viajeMultidestino.push(viajeSoloMultidestino);
 
 }
@@ -222,10 +224,12 @@ let nodoCuartoDestino = document.createElement("input");
 nodoTercerDestino.setAttribute("type", "text");
 nodoTercerDestino.setAttribute("name", "origen");
 nodoTercerDestino.setAttribute("placeholder", "Origen");
+nodoTercerDestino.setAttribute("id", "destinationThird");
 
 nodoCuartoDestino.setAttribute("type", "text");
 nodoCuartoDestino.setAttribute("name", "destino");
 nodoCuartoDestino.setAttribute("placeholder", "Destino");
+nodoCuartoDestino.setAttribute("id", "destinationFourth");
 
 function cambiosVisuales () {
 
@@ -261,7 +265,7 @@ viajeTres.addEventListener('click', cambiosVisuales);
 
 
 
-//selector de viaje
+//selector de viaje y evento buscar
 
 const selectViaje = document.querySelector('#selectTrip');
 
@@ -269,14 +273,33 @@ selectViaje.addEventListener('change', (e) => {
 
     if (viajeUno.checked) {
         alert (`elegiste el viaje ${e.target.value}`);
+        botonBuscar.onclick = (e) => { 
+            e.preventDefault();
+            agregarViajeIdaVuelta();
+        }
     } else if (viajeDos.checked) {
         alert (`elegiste el viaje ${e.target.value}`);
+        botonBuscar.onclick = (e) => { 
+            e.preventDefault();
+            agregarViajeIda();
+        }
     } else {
         alert (`elegiste el viaje ${e.target.value}`);
-        
+        botonBuscar.onclick = (e) => { 
+            e.preventDefault();
+            agregarViajeMultidestino();
+        }
     } 
 
 })
+
+
+botonBuscar.onclick = (e) => { 
+    e.preventDefault();
+    agregarViajeIdaVuelta();
+}
+
+
 
 
 
