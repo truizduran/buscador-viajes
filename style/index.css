@@ -60,6 +60,24 @@ header h1 {
   -moz-box-shadow: -11px 50px 138px -1px rgba(0, 0, 0, 0.83);
 }
 
+.listaMatch {
+  position: absolute;
+  margin-top: -36px;
+  margin-right: 25px;
+}
+
+.airList {
+  list-style: none;
+  background-color: #181F1C;
+  border: solid black;
+  width: 350px;
+  padding-bottom: 10px;
+}
+
+.airList:hover {
+  background-color: grey;
+}
+
 .formFlight {
   height: auto;
   display: -webkit-box;

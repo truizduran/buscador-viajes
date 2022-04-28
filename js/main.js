@@ -157,7 +157,7 @@ class ViajeTotalSoloIda {
 }
 
 
-let viajeIda = []
+let viajeIda = JSON.parse(localStorage.getItem("viajeIda")) || [];
 
 const agregarViajeIda = () => {
 
@@ -170,6 +170,7 @@ const agregarViajeIda = () => {
     let viajeSoloIda = new ViajeTotalSoloIda (origen, destino, fechaInicio, contadorAdultos, contadorMenores);
     viajeIda.push(viajeSoloIda);
 
+    localStorage.setItem("viajeIda",JSON.stringify(viajeIda));
 }
 
 
@@ -189,7 +190,7 @@ class ViajeTotalMultidestino {
 }
 
 
-let viajeMultidestino = []
+let viajeMultidestino = JSON.parse(localStorage.getItem("viajeMultidestino")) || [];
 
 const agregarViajeMultidestino = () => {
 
@@ -205,6 +206,7 @@ const agregarViajeMultidestino = () => {
     let viajeSoloMultidestino = new ViajeTotalMultidestino (origen, destino, destinoTercero, cuartoDestino, fechaInicio, fechaFin, contadorAdultos, contadorMenores);
     viajeMultidestino.push(viajeSoloMultidestino);
 
+    localStorage.setItem("viajeMultidestino",JSON.stringify(viajeMultidestino));
 }
 
 
@@ -375,3 +377,46 @@ var registro = new Date();
 console.log(registro);
 
 
+
+
+
+
+
+const search = document.getElementById("originTrip");
+const matchList = document.getElementById("match-list");
+const searchDestination = document.getElementById("destinationTrip");
+
+//busqueda de airports.json y filtros
+
+const searchAirports = async searchText => {
+    const res = await fetch('../data/aeropuertos.json');
+    const airports = await res.json();
+
+    let matches = airports.filter(airport => {
+        const regex = new RegExp(`^${searchText}`, 'gi');
+        return airport.properties.nombre2.match(regex) || airport.properties.iata.match(regex);
+    });
+
+    if (searchText.length === 0){
+        matches = [];
+        matchList.innerHTML = '';
+    }
+
+    outputHtml(matches);
+};
+
+//mostrar resultados en html
+
+const outputHtml = matches => {
+    if (matches.length > 0) {
+        const html = matches.map(match => `
+            <li class="airList"> ${match.properties.nombre2}, ${match.properties.iata} <span> </span> </li>
+        `).join('');
+    
+        matchList.innerHTML = html; 
+    }
+
+};
+
+search.addEventListener('input', () => searchAirports(search.value));
+searchDestination.addEventListener('input', () => searchAirports(searchDestination.value));

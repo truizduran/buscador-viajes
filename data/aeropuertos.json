@@ -1,7 +1,4 @@
-{
-    "type": "FeatureCollection",
-    "totalFeatures": 55,
-    "features": [
+[
         {
             "type": "Feature",
             "id": "_3.4.4.5_SNA_jun17.view.2",
@@ -1817,11 +1814,4 @@
                 "documento": null
             }
         }
-    ],
-    "crs": {
-        "type": "name",
-        "properties": {
-            "name": "urn:ogc:def:crs:EPSG::4326"
-        }
-    }
-}
+]
