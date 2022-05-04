@@ -16,7 +16,7 @@ function agregarAdultos (e) {
     
     if(contadorAdultos <= 5){
         e.preventDefault();
-        updateAdultos(++contadorAdultos);
+        updateAdultos(++contadorAdultos);      //operador ++
     } else{
         e.preventDefault();
         alert('pasajeros maximos');
@@ -41,7 +41,7 @@ function eliminarAdultos (e) {
 
     if(contadorAdultos >= 1){
         e.preventDefault();
-        removeAdultos(--contadorAdultos);
+        removeAdultos(--contadorAdultos);      //operador --
     } else{
         e.preventDefault();
     }
@@ -125,7 +125,7 @@ class ViajeTotalIdaVuelta {
 }
 
 
-let viajeIdaYvuelta = JSON.parse(localStorage.getItem("viajeIdaVuelta")) || [];
+let viajeIdaYvuelta = JSON.parse(localStorage.getItem("viajeIdaVuelta")) || [];   // operador logico OR
 
 const agregarViajeIdaVuelta = () => {
 
@@ -157,7 +157,7 @@ class ViajeTotalSoloIda {
 }
 
 
-let viajeIda = JSON.parse(localStorage.getItem("viajeIda")) || [];
+let viajeIda = JSON.parse(localStorage.getItem("viajeIda")) || [];   //operador logico OR
 
 const agregarViajeIda = () => {
 
@@ -190,7 +190,7 @@ class ViajeTotalMultidestino {
 }
 
 
-let viajeMultidestino = JSON.parse(localStorage.getItem("viajeMultidestino")) || [];
+let viajeMultidestino = JSON.parse(localStorage.getItem("viajeMultidestino")) || [];   //operador logico OR
 
 const agregarViajeMultidestino = () => {
 
@@ -267,9 +267,10 @@ viajeTres.addEventListener('click', cambiosVisuales);
 
 
 
-//selector de viaje y evento buscar
+//selector de viaje, evento buscar y evento reset 
 
 const selectViaje = document.querySelector('#selectTrip');
+const formularioFlight = document.querySelector('#flightForm')
 
 selectViaje.addEventListener('change', (e) => {
 
@@ -278,20 +279,26 @@ selectViaje.addEventListener('change', (e) => {
         botonBuscar.onclick = (e) => { 
             e.preventDefault();
             agregarViajeIdaVuelta();
+            formularioFlight.reset();
+            resetPasajeros();
         }
-    } else if (viajeDos.checked) {
+    } else if (viajeDos.checked ) {
         alert (`elegiste el viaje ${e.target.value}`);
         botonBuscar.onclick = (e) => { 
             e.preventDefault();
             agregarViajeIda();
+            formularioFlight.reset();
+            resetPasajeros();
         }
-    } else {
+    } else{
         alert (`elegiste el viaje ${e.target.value}`);
         botonBuscar.onclick = (e) => { 
             e.preventDefault();
             agregarViajeMultidestino();
+            formularioFlight.reset();
+            resetPasajeros();
         }
-    } 
+    }
 
 })
 
@@ -299,10 +306,18 @@ selectViaje.addEventListener('change', (e) => {
 botonBuscar.onclick = (e) => { 
     e.preventDefault();
     agregarViajeIdaVuelta();
+    formularioFlight.reset();
+    resetPasajeros();
 }
 
 
+function resetPasajeros (){
+    contadorAdultos = 1;
+    contadorMenores = 0;
 
+    updateAdultos(contadorAdultos);
+    updateMenores(contadorMenores);
+}
 
 
 
@@ -314,7 +329,7 @@ botonBuscar.onclick = (e) => {
 
 //* la opcion buscar no se si iria dentro de cada cons abajo de los objetos o dentro de la funcion viajeUsuario
 
-
+/*
 let buscarOrigen = viajeIdaYvuelta.filter(obj => {
     return obj.origen == origen;
 }) 
@@ -326,7 +341,7 @@ let buscarDestino = viajeIdaYvuelta.filter(obj => {
 let buscarTercerDestino = viajeMultidestino.filter(obj => {
     return obj.terDestino = destinoTercero;
 })
-
+*/
 
 
 
@@ -334,7 +349,7 @@ let buscarTercerDestino = viajeMultidestino.filter(obj => {
 
 //* SORT . se usaria una vez que la pagina de el resultado de las busquedas para que puedan buscar el vuelo mas barato primero, por ejemplo
 //* este al ser un metodo destructivo tendria que hacer otro array con un map no?
-
+/*
 viajeIdaYvuelta.sort((a,b) => {
 
     if(a.precio > b.precio) {
@@ -370,7 +385,7 @@ viajeMultidestino.sort((a,b) => {
     return 0;
 
 })
-
+*/
 
 
 var registro = new Date();
@@ -394,7 +409,8 @@ const searchAirports = async searchText => {
 
     let matches = airports.filter(airport => {
         const regex = new RegExp(`^${searchText}`, 'gi');
-        return airport.properties.nombre2.match(regex) || airport.properties.iata.match(regex);
+        return airport.properties.ciudad.match(regex) || airport.properties.iata.match(regex);
+        
     });
 
     if (searchText.length === 0){
@@ -413,10 +429,30 @@ const outputHtml = matches => {
             <li class="airList"> ${match.properties.nombre2}, ${match.properties.iata} <span> </span> </li>
         `).join('');
     
-        matchList.innerHTML = html; 
+        matchList.innerHTML = html;
+
     }
+
 
 };
 
+
+
 search.addEventListener('input', () => searchAirports(search.value));
 searchDestination.addEventListener('input', () => searchAirports(searchDestination.value));
+
+
+function agregarTexto(){
+
+    document.getElementById(search).value = 'hola';
+}
+
+search.addEventListener('click', agregarTexto);
+
+
+//const closeHtml = () =>{
+//    matchList.style.display = "none";
+//}
+
+
+//window.addEventListener('click', closeHtml);

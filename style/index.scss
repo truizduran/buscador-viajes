@@ -56,9 +56,13 @@ header{
 }
 
 .listaMatch{
+    display: block;
     position: absolute;
     margin-top: -36px;
     margin-right: 25px;
+    height: 105px;
+    z-index: 2;
+    
 }
 
 .airList{
@@ -67,6 +71,7 @@ header{
     border: solid black;
     width: 350px;
     padding-bottom: 10px;
+    
     
 }
 
