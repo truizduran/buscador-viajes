@@ -308,6 +308,8 @@ botonBuscar.onclick = (e) => {
     agregarViajeIdaVuelta();
     formularioFlight.reset();
     resetPasajeros();
+    MostrarFechaInicio();
+    mostrarFechaFin();
 }
 
 
@@ -388,10 +390,6 @@ viajeMultidestino.sort((a,b) => {
 */
 
 
-var registro = new Date();
-console.log(registro);
-
-
 
 
 
@@ -431,6 +429,7 @@ const outputHtml = matches => {
     
         matchList.innerHTML = html;
 
+
     }
 
 
@@ -442,17 +441,68 @@ search.addEventListener('input', () => searchAirports(search.value));
 searchDestination.addEventListener('input', () => searchAirports(searchDestination.value));
 
 
-function agregarTexto(){
+//function agregarTexto(){
+//
+//    document.getElementById(search).value = 'hola';
+//}
 
-    document.getElementById(search).value = 'hola';
-}
-
-search.addEventListener('click', agregarTexto);
+//search.addEventListener('click', agregarTexto);
 
 
-//const closeHtml = () =>{
+
+
+
+
+//function closeHtml () {
+//    matchList.style.opacity = 0;
+//}
+
+//window.addEventListener('click', closeHtml);
+
+
+//matchList.onclick = () =>{
 //    matchList.style.display = "none";
 //}
 
 
-//window.addEventListener('click', closeHtml);
+// organizando fechas de calendario utilizando libreria luxon
+
+
+const DateTime = luxon.DateTime;
+
+const dt = DateTime.now();
+let fechaInicio = document.getElementById("startTrip");
+
+function MostrarFechaInicio () {
+
+    let mes = DateTime.now().toFormat('MM');
+    let dia = DateTime.now().toFormat('dd');
+    let anio = DateTime.now().toFormat('yyyy');
+
+    hoy = anio+"-"+mes+"-"+dia;
+    fechaInicio.value=hoy;
+    fechaInicio.setAttribute("min", hoy);
+    
+}
+
+MostrarFechaInicio();
+
+
+function mostrarFechaFin () {
+
+    let mes = DateTime.now().toFormat('MM');
+    let diaT = DateTime.now().plus({ days: 7 }).toFormat('dd')
+    let anio = DateTime.now().toFormat('yyyy');
+    let anioMax = DateTime.now().plus({ years: 1 }).toFormat('yyyy');
+    let diaN = DateTime.now().toFormat('dd');
+    let mesMax = DateTime.now().plus({ months: -3 }).toFormat('MM');
+
+    oneSemana = anio+"-"+mes+"-"+diaT;
+    oneYear= anioMax+"-"+mesMax+"-"+diaN;
+    
+    fechaFin.value=oneSemana;
+    fechaFin.setAttribute("max", oneYear);
+}
+
+mostrarFechaFin();
+
