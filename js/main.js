@@ -19,7 +19,10 @@ function agregarAdultos (e) {
         updateAdultos(++contadorAdultos);      //operador ++
     } else{
         e.preventDefault();
-        alert('pasajeros maximos');
+        Toastify({
+            text: "pasajeros maximos",
+            duration: 1500,
+        }).showToast();
     }
 
 }
@@ -70,7 +73,10 @@ function agregarMenores (e) {
         updateMenores(++contadorMenores);
     } else{
         e.preventDefault();
-        alert('pasajeros maximos');
+        Toastify({
+            text: "pasajeros maximos",
+            duration: 1500,
+        }).showToast();
     }
 
 }
@@ -275,41 +281,53 @@ const formularioFlight = document.querySelector('#flightForm')
 selectViaje.addEventListener('change', (e) => {
 
     if (viajeUno.checked) {
-        alert (`elegiste el viaje ${e.target.value}`);
+        
         botonBuscar.onclick = (e) => { 
             e.preventDefault();
             agregarViajeIdaVuelta();
-            formularioFlight.reset();
             resetPasajeros();
+            MostrarFechaInicio();
+            mostrarFechaFin();
+            validacion();
+
         }
     } else if (viajeDos.checked ) {
-        alert (`elegiste el viaje ${e.target.value}`);
+        
         botonBuscar.onclick = (e) => { 
             e.preventDefault();
             agregarViajeIda();
-            formularioFlight.reset();
             resetPasajeros();
+            MostrarFechaInicio();
+            mostrarFechaFin();
+            validacion();
         }
     } else{
-        alert (`elegiste el viaje ${e.target.value}`);
+        
         botonBuscar.onclick = (e) => { 
             e.preventDefault();
             agregarViajeMultidestino();
-            formularioFlight.reset();
             resetPasajeros();
+            MostrarFechaInicio();
+            mostrarFechaFin();
+            validacion();
         }
     }
 
 })
 
+let origen = document.getElementById("originTrip");
+let destino = document.getElementById("destinationTrip");
 
 botonBuscar.onclick = (e) => { 
+    
     e.preventDefault();
     agregarViajeIdaVuelta();
-    formularioFlight.reset();
+    //formularioFlight.reset();
     resetPasajeros();
     MostrarFechaInicio();
     mostrarFechaFin();
+    validacion();
+
 }
 
 
@@ -322,72 +340,39 @@ function resetPasajeros (){
 }
 
 
+//validacion de input de viajes
+
+//document.getElementById("originTrip").addEventListener('keyup', function(){
+//    validacion();
+//});
+
+document.getElementById("destinationTrip").addEventListener('keyup', function(){
+    validacion();
+});
 
 
+const validacion = () => {
 
+    let origen = document.getElementById("originTrip");
+    let destino = document.getElementById("destinationTrip");
 
-
-
-
-//* la opcion buscar no se si iria dentro de cada cons abajo de los objetos o dentro de la funcion viajeUsuario
-
-/*
-let buscarOrigen = viajeIdaYvuelta.filter(obj => {
-    return obj.origen == origen;
-}) 
-
-let buscarDestino = viajeIdaYvuelta.filter(obj => {
-    return obj.destino == destino;
-})
-
-let buscarTercerDestino = viajeMultidestino.filter(obj => {
-    return obj.terDestino = destinoTercero;
-})
-*/
-
-
-
-
-
-//* SORT . se usaria una vez que la pagina de el resultado de las busquedas para que puedan buscar el vuelo mas barato primero, por ejemplo
-//* este al ser un metodo destructivo tendria que hacer otro array con un map no?
-/*
-viajeIdaYvuelta.sort((a,b) => {
-
-    if(a.precio > b.precio) {
-        return 1
+    if (origen.value.length > 0 && destino.value.length > 0){
+        destino.classList.remove("errorVer");
+        origen.classList.remove("errorVer");
+        destino.setAttribute("placeholder", "Destino");
+        origen.setAttribute("placeholder", "Origen");
+        
+    } else {
+        destino.classList.add("errorVer");
+        origen.classList.add("errorVer");
+        destino.setAttribute("placeholder", "Por favor, elija destino...");
+        origen.setAttribute("placeholder", "Por favor, elija origen...");
     }
-    if (a.precio < b.precio) {
-        return -1
-    }
-    return 0;
 
-})
+}
 
-viajeIda.sort((a,b) => {
 
-    if(a.precio > b.precio) {
-        return 1
-    }
-    if (a.precio < b.precio) {
-        return -1
-    }
-    return 0;
 
-})
-
-viajeMultidestino.sort((a,b) => {
-
-    if(a.precio > b.precio) {
-        return 1
-    }
-    if (a.precio < b.precio) {
-        return -1
-    }
-    return 0;
-
-})
-*/
 
 
 
@@ -417,22 +402,23 @@ const searchAirports = async searchText => {
     }
 
     outputHtml(matches);
+    
 };
 
 //mostrar resultados en html
 
 const outputHtml = matches => {
     if (matches.length > 0) {
-        const html = matches.map(match => `
+        const html = matches.map(match =>  `
             <li class="airList"> ${match.properties.nombre2}, ${match.properties.iata} <span> </span> </li>
         `).join('');
     
-        matchList.innerHTML = html;
+        matchList.innerHTML = html
 
-
+        
     }
 
-
+    
 };
 
 
@@ -441,28 +427,6 @@ search.addEventListener('input', () => searchAirports(search.value));
 searchDestination.addEventListener('input', () => searchAirports(searchDestination.value));
 
 
-//function agregarTexto(){
-//
-//    document.getElementById(search).value = 'hola';
-//}
-
-//search.addEventListener('click', agregarTexto);
-
-
-
-
-
-
-//function closeHtml () {
-//    matchList.style.opacity = 0;
-//}
-
-//window.addEventListener('click', closeHtml);
-
-
-//matchList.onclick = () =>{
-//    matchList.style.display = "none";
-//}
 
 
 // organizando fechas de calendario utilizando libreria luxon
@@ -478,11 +442,16 @@ function MostrarFechaInicio () {
     let mes = DateTime.now().toFormat('MM');
     let dia = DateTime.now().toFormat('dd');
     let anio = DateTime.now().toFormat('yyyy');
+    let anioMax = DateTime.now().plus({ years: 1 }).toFormat('yyyy');
+    let diaN = DateTime.now().toFormat('dd');
+    let mesMax = DateTime.now().minus({ months: 2 }).toFormat('MM');
+
 
     hoy = anio+"-"+mes+"-"+dia;
     fechaInicio.value=hoy;
     fechaInicio.setAttribute("min", hoy);
-    
+    oneYear= anioMax+"-"+mesMax+"-"+diaN;
+    fechaInicio.setAttribute("max", oneYear);
 }
 
 MostrarFechaInicio();
@@ -491,18 +460,26 @@ MostrarFechaInicio();
 function mostrarFechaFin () {
 
     let mes = DateTime.now().toFormat('MM');
-    let diaT = DateTime.now().plus({ days: 7 }).toFormat('dd')
+    let mesT = DateTime.now().plus({ months: 1 }).toFormat('MM');
+    let dia = DateTime.now().toFormat('dd');
     let anio = DateTime.now().toFormat('yyyy');
     let anioMax = DateTime.now().plus({ years: 1 }).toFormat('yyyy');
     let diaN = DateTime.now().toFormat('dd');
-    let mesMax = DateTime.now().plus({ months: -3 }).toFormat('MM');
+    let mesMax = DateTime.now().minus({ months: 2 }).toFormat('MM');
 
-    oneSemana = anio+"-"+mes+"-"+diaT;
+    oneSemana = anio+"-"+mesT+"-"+dia;
     oneYear= anioMax+"-"+mesMax+"-"+diaN;
+    hoy = anio+"-"+mes+"-"+dia;
     
     fechaFin.value=oneSemana;
     fechaFin.setAttribute("max", oneYear);
+    fechaFin.setAttribute("min", hoy);
 }
 
 mostrarFechaFin();
 
+//enviar formulario
+
+function enviar_formulario(){
+    document.formularioFinal.submit()
+}

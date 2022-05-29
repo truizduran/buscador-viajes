@@ -55,6 +55,16 @@ header{
 
 }
 
+.errorVer{
+    border-color:  red;
+    
+}
+
+.errorVer::placeholder {
+    color: red;
+    font-style: oblique;
+}
+
 .listaMatch{
     display: block;
     position: absolute;

@@ -60,6 +60,30 @@ header h1 {
   -moz-box-shadow: -11px 50px 138px -1px rgba(0, 0, 0, 0.83);
 }
 
+.errorVer {
+  border-color: red;
+}
+
+.errorVer::-webkit-input-placeholder {
+  color: red;
+  font-style: oblique;
+}
+
+.errorVer:-ms-input-placeholder {
+  color: red;
+  font-style: oblique;
+}
+
+.errorVer::-ms-input-placeholder {
+  color: red;
+  font-style: oblique;
+}
+
+.errorVer::placeholder {
+  color: red;
+  font-style: oblique;
+}
+
 .listaMatch {
   display: block;
   position: absolute;
